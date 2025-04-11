@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Processor Type="SynthChain" ID="Disperser" Bypassed="0" Gain="1.0" Balance="0.0"
-           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
-           BuildVersion="650">
+<Processor Type="SynthChain" ID="smear-campaign" Bypassed="0" Gain="1.0"
+           Balance="0.0" VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0"
+           packageName="" BuildVersion="650">
   <ChildProcessors>
     <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
       <ChildProcessors>
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="Knob4" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob3" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob2" value="1.0"/>
-            <Control type="ScriptSlider" id="Knob1" value="200.0"/>
-            <Control type="ScriptSlider" id="Knob5" value="50.0"/>
+            <Control type="ScriptSlider" id="Knob4" value="-1.999998569488525"/>
+            <Control type="ScriptSlider" id="Knob3" value="0.6899999976158142"/>
+            <Control type="ScriptSlider" id="Knob2" value="5.0"/>
+            <Control type="ScriptSlider" id="Knob1" value="3156.0"/>
+            <Control type="ScriptSlider" id="Knob5" value="41.0"/>
           </Content>
-          <UIData Source="DisperserUIData"/>
+          <UIData Source="smear-campaignUIData"/>
         </Processor>
       </ChildProcessors>
     </Processor>
