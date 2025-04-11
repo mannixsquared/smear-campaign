@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Image1" x="0.0" y="0.0" fileName="{PROJECT_FOLDER}overlay.png"
+             width="700.0" height="300.0"/>
+  <Component type="ScriptPanel" id="Header" x="0.0" y="0.0" width="700.0"
+             height="70.0" borderSize="0.0" borderRadius="0.0" bgColour="0"
+             itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptImage" id="Logo" x="10.0" y="10.0" width="61.0" height="60.0"
+               parentComponent="Header" fileName="{PROJECT_FOLDER}logo.png"/>
+    <Component type="ScriptLabel" id="Title" x="76.0" y="19.0" width="200.0"
+               height="40.0" parentComponent="Header" editable="0" text="SMEAR CAMPAIGN"
+               fontName="Avenir Next" fontStyle="Regular" fontSize="26.0" alignment="left"
+               textColour="4292926663"/>
+    <Component type="ScriptLabel" id="Company" x="542.0" y="37.0" alignment="right"
+               text="&#169; Mannix Squared, 2024" textColour="4292926663" parentComponent="Header"
+               fontName="Avenir Next" fontSize="16.0" width="148.0" editable="0"/>
+    <Component type="ScriptLabel" id="Version" x="563.0" y="17.0" text="V1.0"
+               alignment="right" fontStyle="Bold" parentComponent="Header" fontName="Avenir Next"
+               fontSize="16.0" textColour="4280339679" editable="0" width="126.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="KnobPanel" x="0.0" y="60.0" width="700.0"
+             height="240.0" borderSize="0.0" borderRadius="0.0" bgColour="0"
+             itemColour2="0" textColour="0" itemColour="0">
+    <Component type="ScriptSlider" id="Knob4" x="450.0" y="40.0" processorId="DisperserFX"
+               parameterId="Trim" text="Trim" max="0.0" min="-100.0" mode="Decibel"
+               parentComponent="KnobPanel" width="110.0" height="70.0" middlePosition="-50.0"
+               stepSize="0.1000000014901161" isPluginParameter="1" pluginParameterName="Trim"/>
+    <Component type="ScriptSlider" id="Knob3" x="180.0" y="40.0" processorId="DisperserFX"
+               parameterId="Width" text="Width" parentComponent="KnobPanel"
+               width="120.0" height="70.0" middlePosition="0.5" isPluginParameter="1"
+               pluginParameterName="Width"/>
+    <Component type="ScriptSlider" id="Knob2" x="320.0" y="40.0" stepSize="1.0"
+               min="1.0" max="16.0" text="Stack" processorId="DisperserFX" parameterId="Stack"
+               defaultValue="1.0" parentComponent="KnobPanel" width="110.0"
+               height="70.0" middlePosition="8.0" isPluginParameter="1" pluginParameterName="Stack"/>
+    <Component type="ScriptSlider" id="Knob1" x="20.0" y="40.0" middlePosition="1500.0"
+               stepSize="1.0" min="20.0" max="20000.0" suffix=" Hz" text="Frequency"
+               processorId="DisperserFX" parameterId="Frequency" mode="Frequency"
+               defaultValue="200.0" parentComponent="KnobPanel" width="140.0"
+               height="70.0" isPluginParameter="1" pluginParameterName="Frequency"/>
+    <Component type="ScriptSlider" id="Knob5" x="580.0" y="40.0" processorId="DisperserFX"
+               parameterId="Mix" text="Mix" parentComponent="KnobPanel" width="110.0"
+               height="70.0" middlePosition="50.0" stepSize="1.0" defaultValue="50.0"
+               max="100.0" mode="NormalizedPercentage" isPluginParameter="1"
+               pluginParameterName="Mix"/>
+  </Component>
+</ContentProperties>
