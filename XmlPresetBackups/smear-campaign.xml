@@ -9,11 +9,10 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="Knob4" value="-1.999998569488525"/>
-            <Control type="ScriptSlider" id="Knob3" value="0.6899999976158142"/>
-            <Control type="ScriptSlider" id="Knob2" value="5.0"/>
-            <Control type="ScriptSlider" id="Knob1" value="3156.0"/>
-            <Control type="ScriptSlider" id="Knob5" value="41.0"/>
+            <Control type="ScriptSlider" id="Knob3" value="0.1099999994039536"/>
+            <Control type="ScriptSlider" id="Knob2" value="9.0"/>
+            <Control type="ScriptSlider" id="Knob1" value="239.0"/>
+            <Control type="ScriptSlider" id="Knob5" value="0.0"/>
           </Content>
           <UIData Source="smear-campaignUIData"/>
         </Processor>

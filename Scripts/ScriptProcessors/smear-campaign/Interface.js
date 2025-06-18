@@ -1,6 +1,6 @@
  include("LookAndFeel.js");
  
- Content.makeFrontInterface(700, 200);
+ Content.makeFrontInterface(600, 200);
  
  const var KnobPanel = Content.getComponent("KnobPanel");
  KnobPanel.setLocalLookAndFeel(laf);
